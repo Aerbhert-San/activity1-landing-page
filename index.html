@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin:0;
+            font-family: Arial;
+        }
+
+        .nav_bar {
+            position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+            background-color: aliceblue;
+            color: black;
+            padding: 10px 0;
+            z-index: 1000;
+           
+        }
+
+        .nav_bar ul {
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-self: center;
+            margin-left: 10%;
+            
+        }
+        .nav_bar li {
+            margin: 0 15px;
+        }
+
+        .nav_bar a {
+            color: black;
+            text-decoration: none;
+            font-size: 19px;
+        }
+
+        .nav_bar a:hover {
+            color: blue;
+        }
+        .nav_bar a.active {
+    color: blue; 
+    font-weight: bold;
+}
+
+/* section----------------------------------------------------*/
+
+    /*home*/
+    /*heading*/
+    #hero{
+        background: url("wallpaperflare.com_wallpaper.jpg");
+        width: 100%;
+        height: 100vh;
+        background-size: 110%;
+        background-position:left bottom;
+        background-repeat: no-repeat;
+        margin-top: -8%;
+        
+    }
+    h1 {
+        padding-left: 8%;
+        font-size: 5vh;
+        padding-top: 20%;
+    }           
+    .parag1{
+        margin:0 auto;
+        padding-left: 8%;
+        text-align: center;
+        padding-top: 30%;
+        font-size: 1.9vh;
+        justify-content: center;
+        margin-top: 8%;
+    }
+    .p1_container{
+        width:30%;
+        padding-left: 8%;
+    }
+
+
+        section{
+            padding: 40px 10px;
+            margin-top: 10px;
+        }
+/*benefits*/
+    #Benefits_section{
+        width: 100%;
+        height: 60vh;
+    }
+        h2 {
+            text-align: center;
+            font-size: 5vh;
+            margin-top: 0%;
+            
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            grid-template-columns: repeat(3,1fr);
+            display: grid;
+        }
+        .list_benefits {
+            border-radius: 2vh;
+            background: rgba(188,188,188,.15);
+            padding: 4vh;
+            margin: 2vh;
+            border: 1px solid rgba(255,255,255,.3);
+            box-shadow: 0 4px 5px rgba(0,0,0, .2);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+
+        }
+        .list_benefits::before{
+            content:"\2714 ";
+            color:rgb(11, 230, 11);
+            padding: 2%;
+        }
+
+/*importance*/
+    #importance_container{
+        background: url("wallpaper2.jpg");
+        width: 100%;
+        height: 100vh;
+        background-size: 200%;
+        background-position:left center;
+        background-repeat: no-repeat;
+        margin-top: 1%;
+        
+}   
+    #imp_txt{
+        text-align: center;
+        width: 60%;
+        margin-left: 20%;
+        height: 50%;
+        padding-top: 25%;
+    }
+    #importance_heading{
+        font-size: 3vh;
+        text-align: center;
+        width: 20%;
+        
+    }
+/*about*/
+        #b3{
+            font-size: 5vh;
+            text-align: center;
+        }
+        #about_container{
+            width: 100%;
+            height: 60vh;
+            text-align: center;
+           justify-content: center ;
+        }
+        #html_img,#css_img, #js_img{
+            width: 25vh;
+            height: 25vh;
+            box-shadow:  0 6px 7px rgba(0,0,0, .2);
+            border-radius: 100%;
+            margin-left: 5%;}
+           
+     
+        
+
+/*footer*/
+        footer {
+            text-align: center;
+            padding: 1vh;
+            background-color: #333;
+            color: #fff;
+            height: 5vh;
+
+        }
+html{
+    scroll-behavior: smooth;
+}
+
+    @media(max-width:600px){
+        .nav_bar ul {
+            justify-content: center;
+            
+        }
+/*home*/
+        #hero{
+            background-size: 300%;
+        }
+        h1 {
+        text-align: center;
+        padding-top: 30vh;
+    }
+    .p1_container{
+        justify-content: center;
+        width:70%;
+        margin-left: 10%;
+    }      
+    
+/*benefits*/
+        ul{
+            grid-template-columns: repeat(1,1fr);
+            display: grid;
+        }
+/*importance*/
+#importance_container{
+        background-size: 100%;
+        background-position: center;
+        height: 80vh;
+
+}
+#imp_txt{
+        width: 80%;
+        height: 50%;
+        text-align: center;
+        margin-left: 10%;
+        padding-top: 35vh;
+      
+    }
+    #importance_heading{
+        font-size: 2.5vh;
+       
+    }
+/*About*/
+#html_img,#css_img, #js_img{
+            width: 10vh;
+            height: 10vh;
+           }
+
+}
+
+    </style>
+</head>
+<body>
+    
+<!-- navigation bar -->
+    <nav class="nav_bar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Benefits">Benefits</a></li>
+            <li><a href="#Importance">Importance</a></li>
+            <li><a href="#About">About</a></li>
+        </ul>
+    </nav>
+
+ <!--============================ section =======================================-->   
+ <section id="home">
+<div id="hero">
+<h1>Web Development</h1>
+<div class="p1_container">
+<p1 class="parag1">
+    Website developers use various programming languages like <strong>HTML</strong>, <strong>CSS</strong> and <strong>Javascript</strong> to develop websites and
+    web applications.
+</p1>
+</div>
+</div>
+</section>
+<!--= Benefits =-->
+    <section id="Benefits">
+        <div id="#Benefits_section">
+        <h2>Benefits Of Web Development</h2>
+        <ul>
+            <li class="list_benefits"><strong>Business Growth:</strong> Draws in more clients and improves internet presence.</li>
+            <li class="list_benefits"><strong>Accessibility:</strong> Offers services and services around the clock.</li>
+            <li class="list_benefits"><strong>Cost Efficiency:</strong> By automating processes, it lower operating costs.</li>
+            <li class="list_benefits"><strong>Global Reach:</strong> Increases market penetration beyond of rgional borders.</li>
+            <li class="list_benefits"><strong>Brand Presence:</strong> Build and strengthen brand identity.</li>
+            <li class="list_benefits"><strong>Customer Engagemeent:</strong> Promotes direct interaction and Feedback.</li>
+        </ul> 
+        </div>
+    </section>
+
+<!-- Importance -->
+    <section id="Importance">
+        <div id="importance_container">
+        <div id="imp_txt">
+        <p3 id="importance_heading">
+            In today's digital age, <strong>web development</strong> is essential for 
+            visibility and accessibility because it creates an online presence. Web development 
+            also encourages innovation, which help companies and individuals remain current in a <strong>rapidly changing
+            technology environment</strong>.
+
+            
+            
+        </p3>
+        </div>
+        </div>
+    </section>
+
+<!-- ABout -->
+    <section id="About">
+      <div id="about_container">
+        <h3 id="b3">Big 3 of Web Development</h3>
+        <a href="https://html.com" id="html_com">
+            <img id="html_img" src="html_pic.png">
+        </a>
+        <a href="https://www.w3schools.com/js/js_examples.asp" id="js_com">
+            <img id="js_img" src="js.jpeg">
+        </a>
+        <a href="https://www.w3schools.com/css/css_intro.asp" id="css_com">
+            <img id="css_img" src="css.png">
+        </a>
+      </div>
+    </section>
+
+    <script>
+        document.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav_bar a');
+
+    let index = Array.from(sections).findIndex(section =>
+        section.getBoundingClientRect().top <= window.innerHeight / 2 &&
+        section.getBoundingClientRect().bottom >= window.innerHeight / 2
+    );
+
+    navLinks.forEach((link, i) => link.classList.toggle('active', i === index));
+});
+
+    </script>
+
+</body>
+
+<footer>
+    <p>&copy; Created by: Aerbhert John M. Sanchez</p>
+</footer>
+</html>
